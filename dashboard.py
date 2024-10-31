@@ -41,7 +41,7 @@ if selected_stocks:
     # 주가 데이터 표시
     st.subheader("선택한 종목의 주가 데이터")
     for ticker, data in stock_data.items():
-        st.line_chart(data["Close"], width=0, height=300, use_container_width=True, key=ticker)
+        st.line_chart(data["Close"], width=0, height=300, use_container_width=True)
 
     # 재무 지표 비교 테이블 생성
     financial_data = {
